@@ -3,7 +3,7 @@
 <bpel:process name="SitMETestProcess5" targetNamespace="http://iaas.uni-stuttgart.de/SitME"
 	suppressJoinFailure="yes" xmlns:tns="http://iaas.uni-stuttgart.de/SitME"
 	xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
-	xmlns:SitME="http://iaas.uni-stuttgart.de/SitME">
+	xmlns:SitME="http://iaas.uni-stuttgart.de/SitME" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
 	<!-- Import the client WSDL -->
 	<bpel:import location="SitMETestProcess5Artifacts.wsdl"
@@ -27,6 +27,8 @@
 		<!-- Reference to the message passed as input during initiation -->
 		<bpel:variable name="input"
 			messageType="tns:SitMETestProcess5RequestMessage" />
+		
+		<bpel:variable name="endpointTestString" type="xsd:string"/>
 
 		<!-- Reference to the message that will be returned to the requester -->
 		<bpel:variable name="output"
