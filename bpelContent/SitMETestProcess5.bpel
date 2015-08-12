@@ -51,14 +51,14 @@
 		<SitME:SituationalScope>
 
 			<SitME:SituationEvent name="MachineRunning">
-				<SitME:Situation>sit.faults.MachineRunning</SitME:Situation>
-				<SitME:Object>X221</SitME:Object>
+				<SitME:Situation>A0</SitME:Situation>
+				<SitME:Object>1</SitME:Object>
 				<SitME:EntryMode>Wait(50s)</SitME:EntryMode>
 				<SitME:SituationViolation>Abort</SitME:SituationViolation>
 			</SitME:SituationEvent>
 			<SitME:SituationEvent name="MachineFault">
-				<SitME:Situation>sit.faults.MachineFaultX</SitME:Situation>
-				<SitME:Object>X221</SitME:Object>
+				<SitME:Situation>A1</SitME:Situation>
+				<SitME:Object>1</SitME:Object>
 				<SitME:EntryMode>Wait(60s)</SitME:EntryMode>
 				<SitME:SituationViolation>Abort</SitME:SituationViolation>
 			</SitME:SituationEvent>
